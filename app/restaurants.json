@@ -1,0 +1,320 @@
+{
+  "restaurants": [
+    {
+      "blurhash": "UUKJMXv|x]oz0gtRM{V@AHRQwvxZXSs9s;o0",
+      "city": "Helsinki",
+      "description": "Burgers with attitude!",
+      "id": "456162c4-8dab-4959-8cdd-3777c7ede20d",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5b348b31fe8992000bbec771/2be8c7738b220df2f9a0974da5c90d90",
+      "location": [
+        24.941325187683105,
+        60.169938852212965
+      ],
+      "name": "Burger plaza",
+      "tags": [
+        "hamburger",
+        "fries"
+      ]
+    },
+    {
+      "blurhash": "U8INy*D+KjIW%3pZ$yx[5T0Lv|_1.3m,0z9h",
+      "city": "Helsinki",
+      "description": "Japanese ramen",
+      "id": "99fe5fa3-16aa-44fa-8ee2-33bad84ef3c8",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5d108aa82e757db3f4946ca9/d88ebd36611a5e56bfc6a60264fe3f81",
+      "location": [
+        24.941786527633663,
+        60.169934599421396
+      ],
+      "name": "Ramen house",
+      "tags": [
+        "ramen",
+        "risotto"
+      ]
+    },
+    {
+      "blurhash": "UXJHswsy-n%0~T%Ka%NLNFjFxvNe%MRjM|ax",
+      "city": "Helsinki",
+      "description": "Gourmet kebab",
+      "id": "c534233a-dc48-4624-b82c-7be09b481130",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5abcf2d270aae6000deacff0/9c21840f97e01f5c293eae0993b4faa2",
+      "location": [
+        24.94184732393478,
+        60.16993168083865
+      ],
+      "name": "Doner house",
+      "tags": [
+        "kebab",
+        "doner"
+      ]
+    },
+    {
+      "blurhash": "ULL;EN%4?c-Oys?wxuTJ?ujERQMxw[M{aeR4",
+      "city": "Helsinki",
+      "description": "Comfy Chinese restaurant",
+      "id": "08c04d4e-fbe5-4619-bf11-1b02852fdb53",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5cfa497902b535ee1c620fca/2c451d88fe96dc04d228dc4cd3dd23a5",
+      "location": [
+        24.94148075580597,
+        60.16990257838493
+      ],
+      "name": "Chinatown",
+      "tags": [
+        "chinese",
+        "asian"
+      ]
+    },
+    {
+      "blurhash": "UELWIZ-n~pxt?a9tbwIpx^o#OoRkbsD%tP^P",
+      "city": "Helsinki",
+      "description": "Trendy pokebowls",
+      "id": "66d2c74b-4e1b-47cd-bffc-db1485b6b0ca",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5b8e46f4c9d2f5000b8216fa/4c97474360f98231b7bb1f90e430855d",
+      "location": [
+        24.941325187683105,
+        60.16988548380842
+      ],
+      "name": "Poke Bowling",
+      "tags": [
+        "poke",
+        "Hawaii"
+      ]
+    },
+    {
+      "blurhash": "UZP$~|R*o~tRyEM{V[f7?wRjVsV@IAozfhae",
+      "city": "Helsinki",
+      "description": "Fancy sushi burritos",
+      "id": "af895b0d-ca1e-43d3-8912-d1858365c695",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/57d7af84b7426f114912b2a1/75742ebe3c411262325c647a3acbd5b2",
+      "location": [
+        24.9400752782822,
+        60.1701494897883
+      ],
+      "name": "Sushi Burrito",
+      "tags": [
+        "sushi",
+        "burrito"
+      ]
+    },
+    {
+      "blurhash": "UdI3~;Ip0}Rk={bH9]oJW.RjnlbvNeV@xtbI",
+      "city": "Helsinki",
+      "description": "High quality sushi",
+      "id": "c4497ff5-072a-4419-bfd5-11c31ee6cb89",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5ad7050b879256000b477e16/705b6f09e5e4b33779b45afffb994cac",
+      "location": [
+        24.94049370288849,
+        60.16995648878383
+      ],
+      "name": "SushiFun",
+      "tags": [
+        "sushi",
+        "japanese"
+      ]
+    },
+    {
+      "blurhash": "U8Q9.m.TDitlysx]9u%2?bVX-TIn_2gP?bxu",
+      "city": "Helsinki",
+      "description": "Urban sushi",
+      "id": "10d356da-12f6-4921-9dbd-bb8364fa2b62",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5afebf92317288000b8e4c17/24797b40bc5f136cb5605f4de79c0a42",
+      "location": [
+        24.941813349723816,
+        60.16974835162762
+      ],
+      "name": "Sushibar",
+      "tags": [
+        "sushi",
+        "japanese"
+      ]
+    },
+    {
+      "blurhash": "UEKTMO_N@XpINfXn%Mxu_2kV9FtSi{V@RORj",
+      "city": "Helsinki",
+      "description": "Delicious pitas, salads and more",
+      "id": "749beb15-6228-40be-beb3-5584badfa364",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5de0e07c8995dc9c25304c9f/7680cf2cffae35b7302e3a91b65ce8f5",
+      "location": [
+        24.93900239467621,
+        60.1707249837842
+      ],
+      "name": "Fafa's Sokos",
+      "tags": [
+        "street food",
+        "pita"
+      ]
+    },
+    {
+      "blurhash": "UEKTMO_N@XpINfXn%Mxu^+kV9FtSi{V@RORj",
+      "city": "Helsinki",
+      "description": "Delicious pitas and falafels",
+      "id": "7b7385a7-e3e5-4bd5-ab45-aefc445857f4",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5996b207ac09660afae98373/7680cf2cffae35b7302e3a91b65ce8f5",
+      "location": [
+        24.9417033791542,
+        60.169590913672
+      ],
+      "name": "Pita House",
+      "tags": [
+        "pita",
+        "falafel"
+      ]
+    },
+    {
+      "blurhash": "UGGI7M9Y.T-Q_N4:.8W,-;xC-:o3Rkjvn$$$",
+      "city": "Helsinki",
+      "description": "Fresh ingredients",
+      "id": "c55196e1-93cf-4aea-bb68-b84e4dec1121",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5d63b2f947e0db48e4c19e46/f790340eaf6cce48712fd7a0887ba65c",
+      "location": [
+        24.941448569297787,
+        60.16931552051862
+      ],
+      "name": "Little East",
+      "tags": [
+        "middle eastern",
+        "north-african"
+      ]
+    },
+    {
+      "blurhash": "UTE.Oqxu0fxu-:soWCSgNIWXxZs:NJW=kAs.",
+      "city": "Helsinki",
+      "description": "Meaty steaks",
+      "id": "e9a29f1c-5014-48a2-9dec-940b5fa69b4a",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/568f89054f2a1574b0bf0d21/ba4c91a913aa4e7bee2157d26800f9d3",
+      "location": [
+        24.94346022605896,
+        60.16959412414628
+      ],
+      "name": "Steak House",
+      "tags": [
+        "steak",
+        "bar"
+      ]
+    },
+    {
+      "blurhash": "UULXA2%1%%a#oIxZM{kC.TofROWCxuRkogWU",
+      "city": "Helsinki",
+      "description": "Pizza everywhere",
+      "id": "a97855fc-f9ea-4beb-86c0-d321d8d153b9",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/55fff28cdef54a6c86e71bd5/dbe320a61e265a1a85293db4d4f962ae",
+      "location": [
+        24.94167387485504,
+        60.16923254771562
+      ],
+      "name": "Pizza everyday",
+      "tags": []
+    },
+    {
+      "blurhash": "UFCsQ;M|slM~$kfloLsA02xsR.xWxuslW:W=",
+      "city": "Helsinki",
+      "description": "Smoothies swiftly",
+      "id": "00a0263b-d168-4699-bee8-3b69b06377ee",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/56653ef5c26b4c6830ede645/7ebc624172ee732134538bebde1d0f20",
+      "location": [
+        24.94018793106079,
+        60.17241188234262
+      ],
+      "name": "Fresh & Juicy",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "blurhash": "UOGuj,=_xt01nz%2$jR64nRjj[nkS$M|bFxu",
+      "city": "Helsinki",
+      "description": "Japanese food with a twist",
+      "id": "eb63fde4-16fb-477f-88cd-90df607c5e71",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5caf4751b216dd000dd73660/bb2cdb3942e414c2a07b153d6949c0c4",
+      "location": [
+        24.938106536865234,
+        60.171354167342905
+      ],
+      "name": "Japanese Fusion",
+      "tags": [
+        "japanese",
+        "modern"
+      ]
+    },
+    {
+      "blurhash": "UHKKK5^Qo|%3*0GZXUR44n$fx9s;Z$M{xas,",
+      "city": "Helsinki",
+      "description": "Fresh, always fresh",
+      "id": "bec1f38d-8429-40d7-8b0a-86cae8ae3cdf",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/5c1bb3c58d5781000abfd079/0ff324c4df574ddc1a6699cf26992b55",
+      "location": [
+        24.945595264434814,
+        60.17096459277974
+      ],
+      "name": "Little Italy",
+      "tags": [
+        "pizza",
+        "pasta"
+      ]
+    },
+    {
+      "blurhash": "UMLNV:rqJ7Mc~pkrNf%NyE-AVYt6J.oKRPx^",
+      "city": "Helsinki",
+      "description": "Wings",
+      "id": "07c000e0-4ec5-4d2a-a5c1-de56f2f37339",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/590c53172b10d62f9ac14830/2b416f8e941ceebb6e5d2e2efc8c81ce",
+      "location": [
+        24.9454665184021,
+        60.17155216317508
+      ],
+      "name": "Wing Buddies",
+      "tags": [
+        "wings",
+        "hotdog"
+      ]
+    },
+    {
+      "blurhash": "UYLgb6ad*0%24nf6DiRjI]RjMxSgMxx[kBRQ",
+      "city": "Helsinki",
+      "description": "Fresh sushi",
+      "id": "9efb5c15-64ba-4697-99ef-31ecfca76d46",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/56a1d69c38115153ce516be7/b55be8561839f5bf03cf1e78933a8295",
+      "location": [
+        24.938321113586426,
+        60.16940733239114
+      ],
+      "name": "Sushi and Friends",
+      "tags": [
+        "sushi",
+        "japanese"
+      ]
+    },
+    {
+      "blurhash": "UUG8TIIAnO%2~AspRkRP^iaJwwxZV@oLr?n%",
+      "city": "Helsinki",
+      "description": "Quality sushi",
+      "id": "dd285292-1cfa-4bb2-98b3-7e928b457fe0",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/54fed4b8747daa39fff94ff2/57606ccce2a2ed4ce98d4043934e013e",
+      "location": [
+        24.939225018024445,
+        60.16898783926865
+      ],
+      "name": "Tokyo house",
+      "tags": [
+        "sushi",
+        "japanese"
+      ]
+    },
+    {
+      "blurhash": "UPF5N}I7WBNfoff6oejY+[JCNZS2jdawofWY",
+      "city": "Helsinki",
+      "description": "Vegan friendly",
+      "id": "def85f15-ac5d-4f43-b2c6-7c058b963e53",
+      "image": "https://prod-wolt-venue-images-cdn.wolt.com/568f828c4f2a1574b22f31f6/25d4cb0845abef6d0375f69df874bbb4",
+      "location": [
+        24.944517016410828,
+        60.16923121347787
+      ],
+      "name": "VegGrill",
+      "tags": [
+        "vegan",
+        "vegetarian"
+      ]
+    }
+  ]
+}
