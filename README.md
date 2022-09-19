@@ -2,11 +2,45 @@
 Let's build Restaurant API using modern Python and [FastAPI](https://fastapi.tiangolo.com/) as the web framework.
 
 ## Restaurant API - specification
-A simple backend service which stores information about restaurants and has two endpoints:
-1. GET _/restaurants_ which returns data for all the restaurants
-2. GET _/restaurants/(restaurant-id)_ which returns data for a single restaurant
+This is what we are going to implement today!
 
-The restaurant data is stored in the [restaurants.json](app/restaurants.json) file which contains information about 20 fake restaurants which are located in Helsinki area.
+A simple backend service which stores information about restaurants and has two endpoints for accessing that information:
+1. GET _/restaurants_ which returns data for all the restaurants.The response payload format should be:
+```json
+[
+  {
+    "name": "Example restaurant",
+    "description": "Example description",
+    "id": "unique-id-for-the-restaurant",
+    "location": {
+      "city": "Example city"
+    }
+  }
+]
+```
+
+2. GET _/restaurants/(restaurant-id)_ which returns data for a single restaurant. The response payload format should be:
+```json
+{
+  "name": "Example restaurant",
+  "description": "Example description",
+  "id": "unique-id-for-the-restaurant",
+  "location": {
+    "city": "Example city",
+    "coordinates": {
+      "lat": 60.169938852212965,
+      "lon": 24.941325187683105
+    }
+  },
+  "tags": [
+    "example tag"
+  ]
+}
+```
+
+
+## Restaurant data
+The restaurant data is stored in the [restaurants.json](app/restaurants.json) file which contains information about 20 imaginary restaurants which are located in Helsinki area.
 
 Example data for a single restaurant:
 ```json
