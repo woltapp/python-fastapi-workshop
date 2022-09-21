@@ -94,6 +94,11 @@ uvicorn app.main:app --reload
 
 The API documentation is available in http://127.0.0.1:8000/docs.
 
+Run the tests (note that this does not require the server to be running):
+```
+pytest
+```
+
 ## Additional features
 
 __You can code these on your own after the workshop 😉__
