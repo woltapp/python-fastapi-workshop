@@ -13,7 +13,11 @@ A simple backend service which stores information about restaurants and has two 
     "description": "Example description",
     "id": "unique-id-for-the-restaurant",
     "location": {
-      "city": "Example city"
+      "city": "Example city",
+      "coordinates": {
+        "lat": 60.169938852212965,
+        "lon": 24.941325187683105
+      }
     }
   }
 ]
@@ -31,10 +35,7 @@ A simple backend service which stores information about restaurants and has two 
       "lat": 60.169938852212965,
       "lon": 24.941325187683105
     }
-  },
-  "tags": [
-    "example tag"
-  ]
+  }
 }
 ```
 
