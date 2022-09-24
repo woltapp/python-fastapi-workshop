@@ -74,6 +74,8 @@ Fields:
 * tags: A list of tags describing what kind of food the restaurant sells, e.g. pizza / burger (type: a list of strings, max. 3 elements)
 
 ## Development
+
+### Without Docker
 **Prerequisites**
 * Python 3.9 or later: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 * Poetry: [https://python-poetry.org/docs/#installation](https://python-poetry.org/docs/#installation)
@@ -90,6 +92,14 @@ poetry shell
 Run the server (`--reload` automatically restarts the server when there are changes in the code):
 ```
 uvicorn app.main:app --reload
+```
+
+The API documentation is available in http://127.0.0.1:8000/docs.
+
+### With Docker
+Run the app:
+```
+docker-compose up
 ```
 
 The API documentation is available in http://127.0.0.1:8000/docs.
