@@ -76,20 +76,54 @@ Fields:
 
 ## Development
 
+### With Docker
+
+#### Running the app
+Run the app:
+```
+docker-compose up
+```
+
+The API documentation is available in http://127.0.0.1:8000/docs.
+
+#### Tests
+```
+docker-compose exec restaurant-api pytest
+```
+
 ### Without Docker
 **Prerequisites**
-* Python 3.9 or later: [https://www.python.org/downloads/](https://www.python.org/downloads/)
-* Poetry: [https://python-poetry.org/docs/#installation](https://python-poetry.org/docs/#installation)
+* Python 3.10 or later: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-Install the dependencies:
+#### Setting things up
+Create a virtual environment:
 ```
-poetry install
+python -m venv .venv
 ```
 
-Activate the poetry environment:
+Activate the virtual environment:
+
+* Linux / MacOS:
+    ```
+    . .venv/bin/activate
+    ```
+* Windows (CMD):
+    ```
+    .venv/Scripts/activate.bat
+    ```
+
+* Windows (Powershell)
+    ```
+    .venv/Scripts/Activate.ps1
+    ```
+
+Install the dependencies
 ```
-poetry shell
+pip install -r requirements.txt
 ```
+
+#### Running the app
+
 Run the server (`--reload` automatically restarts the server when there are changes in the code):
 ```
 uvicorn app.main:app --reload
@@ -97,13 +131,10 @@ uvicorn app.main:app --reload
 
 The API documentation is available in http://127.0.0.1:8000/docs.
 
-### With Docker
-Run the app:
+#### Tests
 ```
-docker-compose up
+pytest
 ```
-
-The API documentation is available in http://127.0.0.1:8000/docs.
 
 ## Additional features
 
@@ -113,3 +144,12 @@ __You can code these on your own after the workshop 😉__
 3. Implement an endpoint which takes the customer location as a query parameter and returns the restaurants which are within 500 meters radius from the customer's location. For example: GET /restaurants/nearby?lat=60.17106&lon=24.934434
 4. Instead of storing the restaurants in a static json file, store them in a database instead (hint: have a look at [SQLModel](https://sqlmodel.tiangolo.com/)). Additionally add endpoints for creating, updating, and deleting restaurants.
 5. Implement automated tests for all the functionality you've built. Familiarise yourself with [pytest](https://docs.pytest.org/en/latest/) and read [how to test FastAPI applications](https://fastapi.tiangolo.com/tutorial/testing/).
+
+## Tools to make your life easier with Python applications
+* [Poetry](https://python-poetry.org/docs/) for dependency management
+* [Ruff](https://docs.astral.sh/ruff/) for linting
+* [Ruff Formatter](https://docs.astral.sh/ruff/formatter/) for automatic formatting
+* [Mypy](https://mypy.readthedocs.io/en/stable/) for static type checking
+* [Pre-commit](https://pre-commit.com/) for automatically running all the code quality related tools during commits/pushes
+* [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/) for measuring the test coverage
+* [GitHub Actions](https://github.com/features/actions) for continuous integration
