@@ -81,14 +81,14 @@ Fields:
 #### Running the app
 Run the app:
 ```
-docker-compose up
+docker compose up
 ```
 
 The API documentation is available in http://127.0.0.1:8000/docs.
 
 #### Tests
 ```
-docker-compose exec restaurant-api pytest
+docker compose run restaurant-api pytest
 ```
 
 ### Without Docker
