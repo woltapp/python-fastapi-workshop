@@ -105,7 +105,7 @@ Activate the virtual environment:
 
 * Linux / MacOS:
     ```
-    . .venv/bin/activate
+    source .venv/bin/activate
     ```
 * Windows (CMD):
     ```
