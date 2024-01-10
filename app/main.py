@@ -2,9 +2,33 @@ import json
 import pathlib
 
 from fastapi import FastAPI, Path, Query
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 app = FastAPI(title="Restaurant API")
+
+restaurants_by_id = {}
+
+
+@app.on_event("startup")
+def startup_event():
+    data_file_path = pathlib.Path(__file__).parent / "restaurants.json"
+    with open(data_file_path) as my_file:
+        restaurants_data = json.load(my_file)
+
+    for restaurant in restaurants_data["restaurants"]:
+        name = restaurant["name"]
+        id = restaurant["id"]
+        description = restaurant["description"]
+        lon, lat = restaurant["location"]
+        city = restaurant["city"]
+
+        restaurants_by_id[id] = Restaurant(
+            name=name,
+            id=id,
+            description=description,
+            location=Location(city=city, coordinates=Coordinates(lat=lat, lon=lon)),
+        )
 
 
 @app.get("/")
@@ -18,30 +42,16 @@ def hello_world():
     description="My description",
 )
 def showcase_features(
-    some_path_parameter: int = Path(title="my title"),
-    debug: bool = Query(default=False, description="description"),
+    some_path_parameter: int = Path(
+        title="path param title", description="path param description"
+    ),
+    debug: bool = Query(
+        default=False, title="debug title", description="my query param description"
+    ),
 ):
     if debug:
         print("Now we are debugging")
     return {"Hello": "Jerry", "Got param": some_path_parameter}
-
-
-"""
-[
-  {
-    "name": "Example restaurant",
-    "description": "Example description",
-    "id": "unique-id-for-the-restaurant",
-    "location": {
-      "city": "Example city",
-      "coordinates": {
-        "lat": 60.169938852212965,
-        "lon": 24.941325187683105
-      }
-    }
-  }
-]
-"""
 
 
 class Coordinates(BaseModel):
@@ -63,25 +73,12 @@ class Restaurant(BaseModel):
 
 @app.get("/restaurants")
 def get_restaurants() -> list[Restaurant]:
-    data_file_path = pathlib.Path(__file__).parent / "restaurants.json"
-    with open(data_file_path) as my_file:
-        restaurants_data = json.load(my_file)
+    return restaurants_by_id.values()
 
-    restaurants = []
-    for restaurant in restaurants_data["restaurants"]:
-        name = restaurant["name"]
-        id = restaurant["id"]
-        description = restaurant["description"]
-        lon, lat = restaurant["location"]
-        city = restaurant["city"]
 
-        restaurants.append(
-            Restaurant(
-                name=name,
-                id=id,
-                description=description,
-                location=Location(city=city, coordinates=Coordinates(lat=lat, lon=lon)),
-            )
-        )
-
-    return restaurants
+@app.get("/restaurant/{restaurant_id}")
+def get_restaurant(restaurant_id: str) -> Restaurant:
+    if restaurant_id in restaurants_by_id:
+        return restaurants_by_id[restaurant_id]
+    else:
+        return JSONResponse(status_code=404, content={"detail": "Restaurant unknown"})
